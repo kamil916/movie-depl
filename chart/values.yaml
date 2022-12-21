@@ -1,0 +1,9 @@
+replicaCount: 2
+image:
+  repository: kamil31/movieapp
+  pullPolicy: IfNotPresent
+  tag: "v3"
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 30090
